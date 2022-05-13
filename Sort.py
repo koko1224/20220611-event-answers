@@ -37,7 +37,7 @@ def sort(array):
     # 配列の後ろは未ソートなので，iの値を1に更新
     i = i if i > 0 else 1
 
-    # 小さかった部分と大きかった部分に分け再起処理
+    # 小さかった部分と大きかった部分に分け再帰処理
     return sort(array[:i]) + sort(array[i:])
 
     # ここまで記述
